@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus AI - Product Roadmap 2026+</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #1a1a1a;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.2em; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            .container { padding: 20px; }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.3em; }
+            table { font-size: 0.8em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NEXUS AI</h1>
+        <h2>PRODUCT ROADMAP 2026+</h2>
+        <p><strong>Versão:</strong> 2.0 | <strong>Escopo:</strong> Estratégia de Produto | <strong>Audiência:</strong> Executivos, Stakeholders, Clientes</p>
+        <hr>
+        <h2>ÍNDICE</h2>
+        <ul>
+            <li><a href="#visao-executiva">Visão Executiva</a></li>
+            <li><a href="#contexto-de-mercado">Contexto de Mercado</a></li>
+            <li><a href="#estrutura-de-evolucao">Estrutura de Evolução</a></li>
+            <li><a href="#geracao-1">Geração 1: Qualidade em Tempo Real</a></li>
+            <li><a href="#geracao-2">Geração 2: Disponibilidade & Operações</a></li>
+            <li><a href="#geracao-3">Geração 3: Performance & Escalabilidade</a></li>
+            <li><a href="#geracao-4">Geração 4: Inteligência Preditiva</a></li>
+            <li><a href="#geracao-5">Geração 5: Plataforma Global</a></li>
+            <li><a href="#sumario-executivo">Sumário Executivo</a></li>
+            <li><a href="#proximos-passos">Próximos Passos</a></li>
+        </ul>
+        <hr>
+        <h2 id="visao-executiva">VISÃO EXECUTIVA</h2>
+        <p><strong>Nexus AI</strong> é uma plataforma de Manufacturing Execution System (MES) com Inteligência Artificial integrada, capaz de <strong>otimizar processos, reduzir perdas e apoiar decisões estratégicas em tempo real</strong> em indústrias de transformação (plásticos, filmes, embalagens, extrusão e processos contínuos/batch similares).</p>
+        <h3>Diferencial Competitivo</h3>
+        <ul>
+            <li><strong>Única plataforma</strong> que integra Visão Computacional + Machine Learning + IA Conversacional + Análise Estatística em camada unificada</li>
+            <li><strong>MESS + Inteligência:</strong> Não é apenas coleta de dados, é <strong>automatização e recomendação de decisões</strong></li>
+            <li><strong>Evolução Estruturada de OEE:</strong> Qualidade → Disponibilidade → Performance (crescimento incremental e validado)</li>
+            <li><strong>Arquitetura Multi-Tenant desde Gen 3:</strong> Escalabilidade global sem redesenho</li>
+            <li><strong>Aprendizado Coletivo (Gen 5):</strong> Modelos treinados com dados de múltiplas fábricas, gerando inteligência compartilhada</li>
+        </ul>
+        <h3>Horizonte</h3>
+        <p>O roadmap define a evolução em <strong>5 gerações principais</strong>, partindo de um <strong>MVP focalizado em Qualidade</strong> (Gen 1) até uma <strong>plataforma inteligente, global e autônoma</strong> capaz de coordenar otimizações entre múltiplas fábricas (Gen 5).</p>
+        <hr>
+        <h2 id="contexto-de-mercado">CONTEXTO DE MERCADO</h2>
+        <h3>Desafios Atuais da Indústria de Transformação</h3>
+        <p><strong>Qualidade e Perdas:</strong></p>
+        <ul>
+            <li>Inspeção manual limitada a amostras (cobertura &lt;5%)</li>
+            <li>Decisões lentas: 20–30 minutos por lote</li>
+            <li>Sem visibilidade de causa‑raiz de defeitos</li>
+            <li>Taxa elevada de rejeições e retrabalhamento</li>
+        </ul>
+        <p><strong>Confiabilidade Operacional:</strong></p>
+        <ul>
+            <li>Paradas não planejadas impactam cronograma de entrega</li>
+            <li>Sem correlação clara entre parâmetros de máquina e falhas</li>
+            <li>Manutenção predominantemente reativa</li>
+        </ul>
+        <p><strong>Eficiência Produtiva:</strong></p>
+        <ul>
+            <li>Máquinas frequentemente rodando abaixo da capacidade nominal</li>
+            <li>Sem compreensão do por quê</li>
+            <li>Mix de produção definido manualmente, sem otimização global</li>
+        </ul>
+        <p><strong>Conformidade e Rastreabilidade:</strong></p>
+        <ul>
+            <li>Papelwork elevado</li>
+            <li>Auditoria complexa (buscar evidências levanta horas)</li>
+            <li>Risco de não conformidade com regulações (LGPD, ISO, FDA, etc.)</li>
+        </ul>
+        <h3>Oportunidade</h3>
+        <p>Empresas que implementam <strong>visão integrada de OEE com IA</strong> reportam:</p>
+        <ul>
+            <li>↑ Produção +10–20% (menos rejeições, menos paradas)</li>
+            <li>↓ Custo de produção –8–15% (eficiência + otimização de mix)</li>
+            <li>↑ Conformidade e rastreabilidade (automatizada)</li>
+            <li>↑ Velocidade de decisão (minutos vs horas)</li>
+        </ul>
+        <p><strong>Nexus AI materializa essa oportunidade.</strong></p>
+        <hr>
+        <h2 id="estrutura-de-evolucao">ESTRUTURA DE EVOLUÇÃO</h2>
+        <pre><code>┌──────────────────────────────────────────────────────────────────────┐
+│                        NEXUS AI EVOLUTION                            │
+├──────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│  Gen 1        Gen 2        Gen 3        Gen 4          Gen 5        │
+│  Qualidade    Disponib.    Performance  Preditiva      Plataforma  │
+│  (OEE-Q)      (OEE-A)      (OEE-P)      (ML+IA)        (Multi-T)   │
+│                                                                      │
+│  MVP          Operações    Eficiência   Inteligência   Escala       │
+│  Real-time    Confiab.     Produtiv.    Automação      Global       │
+│                                                                      │
+│  Mês 1-3      Mês 4-6      Mês 7-9      Mês 10-12      Mês 13+     │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘</code></pre>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Gen</th>
+                    <th>Foco Principal</th>
+                    <th>Impacto em OEE</th>
+                    <th>Público-Alvo</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>Qualidade Real-time</td>
+                    <td>OEE +15–20%</td>
+                    <td>Operação</td>
+                    <td>MVP</td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>Disponibilidade</td>
+                    <td>OEE +10–15% (acumulado)</td>
+                    <td>Manutenção</td>
+                    <td>Planejado</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>Performance</td>
+                    <td>OEE +5–10% (acumulado)</td>
+                    <td>Processo/Eng.</td>
+                    <td>Roadmap</td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>Preditivo & Prescritivo</td>
+                    <td>Paradas –40–50%</td>
+                    <td>Estratégia</td>
+                    <td>Roadmap</td>
+                </tr>
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>Otimização Global</td>
+                    <td>Custo –15–20%</td>
+                    <td>Executivo</td>
+                    <td>Visão 2027+</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <hr>
+        <h1 id="geracao-1">GERAÇÃO 1: QUALIDADE EM TEMPO REAL (MVP)</h1>
+        <h2>Missão</h2>
+        <p>Automatizar e centralizar a <strong>inspeção de qualidade</strong> em tempo real, substituindo metodologias manuais por <strong>visão computacional e machine learning</strong>, permitindo:</p>
+        <ul>
+            <li>✅ Decisões instantâneas (tempo real &lt; 2 min)</li>
+            <li>✅ Cobertura próxima a 100% (vs amostragem &lt;5%)</li>
+            <li>✅ Rastreabilidade completa por unidade produzida</li>
+            <li>✅ Redução significativa de perdas por qualidade</li>
+        </ul>
+        <h2>Público-Alvo</h2>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Persona</th>
+                    <th>Responsabilidade</th>
+                    <th>Necessidade</th>
+                    <th>Impacto Esperado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Inspetor / Operador de Qualidade</strong></td>
+                    <td>Validar qualidade em tempo real</td>
+                    <td>Visualizar alertas, ver vídeos de anomalias, autorizar decisões</td>
+                    <td>Tempo de decisão: 30 min → 2 min</td>
+                </tr>
+                <tr>
+                    <td><strong>Gestor de Produção</strong></td>
+                    <td>Garantir OEE e cumprimento de prazos</td>
+                    <td>Dashboard de qualidade, comparação turno/máquina</td>
+                    <td>Visibilidade imediata de problemas</td>
+                </tr>
+                <tr>
+                    <td><strong>Gestor de Qualidade / Coordenador</strong></td>
+                    <td>Analisar tendências, aprovar reclassificações</td>
+                    <td>Histórico detalhado, padrões, causas‑raiz</td>
+                    <td>Menos surpresas, mais dados</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <h2>Problema Resolvido</h2>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Antes (Status Quo)</th>
+                    <th>Depois (Nexus AI Gen 1)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>16 amostras por lote (cobertura ~1%)</td>
+                    <td>100% de cobertura via visão computacional</td>
+                </tr>
+                <tr>
+                    <td>Decisão manual: 20–30 min</td>
+                    <td>Análise automática: &lt;2 min</td>
+                </tr>
+                <tr>
+                    <td>Sem evidência visual de anomalia</td>
+                    <td>Vídeo/imagem sincronizado com alerta</td>
+                </tr>
+                <tr>
+                    <td>Taxa alta de rejeições e aparas</td>
+                    <td>Redução &gt;20% em perdas (primeiros 30 dias)</td>
+                </tr>
+                <tr>
+                    <td>Sem correlação parâmetro–qualidade</td>
+                    <td>Insights automáticos de causa‑raiz (Mentor IA)</td>
+                </tr>
+                <tr>
+                    <td>Paperwork e retrabalho manual</td>
+                    <td>Rastreabilidade digital completa</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <h2>Funcionalidades Core</h2>
+        <h3>1. Dashboard de Resultados de Qualidade</h3>
+        <p><strong>Descrição:</strong><br>Painel executivo consolidado mostrando KPIs de qualidade em tempo real, com filtros dinâmicos e gráficos comparativos.</p>
+        <p><strong>Funcionalidades:</strong></p>
+        <ul>
+            <li><strong>KPIs em destaque:</strong>
+                <ul>
+                    <li>Produção total (kg/unidades)</li>
+                    <li>Produção aprovada (%)</li>
+                    <li>Produção em alerta (%)</li>
+                    <li>Produção reprovada (%)</li>
+                    <li>Índice de variação de espessura ou parâmetro crítico</li>
+                </ul>
+            </li>
+            <li><strong>Filtros:</strong>
+                <ul>
+                    <li>Período (hoje, semana, mês, customizado)</li>
+                    <li>Ordem de produção</li>
+                    <li>Linha/máquina</li>
+                    <li>Produto/item</li>
+                    <li>Turno</li>
+                    <li>Cliente</li>
+                </ul>
+            </li>
+            <li><strong>Visualizações:</strong>
+                <ul>
+                    <li>KPIs em cards com tendência (↑↓)</li>
+                    <li>Gráficos de série temporal (variação ao longo do dia)</li>
+                    <li>Comparativo: turno A vs B vs C</li>
+                    <li>Heatmap de máquinas (verde=bom, amarelo=alerta, vermelho=crítico)</li>
+                </ul>
+            </li>
+            <li><strong>Ações:</strong>
+                <ul>
+                    <li>Exportar dados para Excel</li>
+                    <li>Gerar relatório em PDF</li>
+                    <li>Drill‑down para detalhe de OP específica</li>
+                </ul>
+            </li>
+        </ul>
+        <p><strong>Valor Comercial:</strong></p>
+        <ul>
+            <li>Executivo vê saúde de qualidade em 10 segundos</li>
+            <li>Identifica padrões (qual turno/máquina tem melhor performance?)</li>
+            <li>Base para decisões de investimento (onde treinar? onde investir em manutenção?)</li>
+        </ul>
+        <hr>
+        <h3>2. Inspeção de Qualidade por OP/Lote</h3>
+        <p><strong>Descrição:</strong><br>Tela de trabalho principal do inspetor, mostrando todos os lotes de uma OP com parâmetros de qualidade e status de decisão.</p>
+        <p><strong>Funcionalidades:</strong></p>
+        <ul>
+            <li><strong>Seleção de OP:</strong>
+                <ul>
+                    <li>Dropdown com OPs abertas (últimos 7 dias, configurável)</li>
+                    <li>Filtros: cliente, produto, máquina, controlador</li>
+                    <li>Metadados: cliente, item, data, turno, operador responsável</li>
+                </ul>
+            </li>
+            <li><strong>Grid de Lotes:</strong>
+                <ul>
+                    <li>Colunas: ID do lote, data criação, turno, operador máquina, intensidade de tratamento/setup</li>
+                    <li>Parâmetros de qualidade: espessura (mín/máx/média), variação (%), status</li>
+                    <li>Status visual: 🟢 Aprovado | 🟡 Alerta | 🔴 Reprovado</li>
+                </ul>
+            </li>
+            <li><strong>Gráfico de Variação:</strong>
+                <ul>
+                    <li>Série temporal de um parâmetro crítico (ex: espessura) ao longo do lote</li>
+                    <li>Linhas de threshold (ideal, alerta, reprovado)</li>
+                    <li>Períodos fora de range destacados em cor</li>
+                    <li>Anotação de timestamps de eventos críticos</li>
+                </ul>
+            </li>
+            <li><strong>Workflow de Decisão:</strong>
+                <ul>
+                    <li>Botões: Aprovar, Alerta, Rejeitar</li>
+                    <li>Se Alerta: campo de observação + requer aprovação de coordenador</li>
+                    <li>Se Rejeitar: opcoes de ação (re‑processar, sucata, cliente informado, etc.)</li>
+                    <li>Auditoria: timestamp, usuário, observação salva automaticamente</li>
+                </ul>
+            </li>
+        </ul>
+        <p><strong>Valor Comercial:</strong></p>
+        <ul>
+            <li>Inspetor toma decisão em 2 minutos em vez de 30</li>
+            <li>Menos discussão/dúvida (dados falam)</li>
+            <li>Rastreabilidade legal de todas as decisões</li>
+        </ul>
+        <hr>
+        <h1 id="geracao-2">GERAÇÃO 2: DISPONIBILIDADE & OPERAÇÕES INTELIGENTES</h1>
+        <h2>Missão</h2>
+        <p>Expandir a visão de <strong>OEE para a dimensão Disponibilidade</strong>, capturando e analisando paradas de máquina (planejadas e não‑planejadas), MTBF/MTTR, e fornecendo insights sobre confiabilidade operacional. Preparar infraestrutura para mobile e inteligência preditiva.</p>
+        <h2>Público-Alvo</h2>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Persona</th>
+                    <th>Responsabilidade</th>
+                    <th>Necessidade</th>
+                    <th>Impacto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Operador/Inspetor</strong></td>
+                    <td>Registrar paradas em tempo real</td>
+                    <td>Dashboard de paradas, alertas críticos</td>
+                    <td>Menos downtime silencioso</td>
+                </tr>
+                <tr>
+                    <td><strong>Gestor de Manutenção</strong></td>
+                    <td>Priorizar ações preventivas</td>
+                    <td>Dashboard de MTBF/MTTR, análise de causa</td>
+                    <td>Manutenção mais eficiente</td>
+                </tr>
+                <tr>
+                    <td><strong>Gestor de Produção</strong></td>
+                    <td>Planejar produção considerando disponibilidade</td>
+                    <td>Forecasting de paradas, alertas antecipados</td>
+                    <td>Melhor cumprimento de prazos</td>
+                </tr>
+                <tr>
+                    <td><strong>Executivo de Operações</strong></td>
+                    <td>Acompanhar KPI de disponibilidade</td>
+                    <td>Benchmarking entre máquinas/plantas</td>
+                    <td>Decisões de investimento fundadas</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <h2>Problema Resolvido</h2>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Antes (Gen 1)</th>
+                    <th>Depois (Gen 2)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Visão apenas de Qualidade (OEE ~50%)</td>
+                    <td>OEE 2D: Qualidade + Disponibilidade (OEE ~65%)</td>
+                </tr>
+                <tr>
+                    <td>Paradas registradas manualmente em papel</td>
+                    <td>Captura automática de paradas em tempo real</td>
+                </tr>
+                <tr>
+                    <td>Sem análise de MTBF/MTTR</td>
+                    <td>Dashboard de confiabilidade por máquina</td>
+                </tr>
+                <tr>
+                    <td>Gerente vê qualidade, não disponibilidade</td>
+                    <td>Acesso mobile para acompanhar OEE 2D</td>
+                </tr>
+                <tr>
+                    <td>Sem correlação parada→qualidade</td>
+                    <td>Insights: parada X impacta qualidade dos Y lotes seguintes</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <hr>
+        <h1 id="geracao-3">GERAÇÃO 3: PERFORMANCE & ESCALABILIDADE GLOBAL</h1>
+        <h2>Missão</h2>
+        <p>Completar o tripé de <strong>OEE</strong> adicionando dimensão <strong>Performance</strong> (velocidade real vs teórica), e preparar produto para <strong>multi‑tenant</strong>, viabilizando venda para múltiplos clientes e escalabilidade global.</p>
+        <h2>Público-Alvo</h2>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Persona</th>
+                    <th>Responsabilidade</th>
+                    <th>Necessidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Engenheiro de Processo</strong></td>
+                    <td>Otimizar velocidade de produção</td>
+                    <td>Insights de por que máquina fica lenta, recomendações</td>
+                </tr>
+                <tr>
+                    <td><strong>Gestor Global</strong></td>
+                    <td>Comparar eficiência entre fábricas/países</td>
+                    <td>Benchmark global, decisão de onde produzir</td>
+                </tr>
+                <tr>
+                    <td><strong>Novos Clientes</strong></td>
+                    <td>Aplicar Nexus AI em suas operações</td>
+                    <td>Arquitetura multi‑tenant, customização rápida</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <hr>
+        <h1 id="geracao-4">GERAÇÃO 4: INTELIGÊNCIA PREDITIVA E PRESCRITIVA</h1>
+        <h2>Missão</h2>
+        <p>Evoluir de <strong>análise retrospectiva</strong> para <strong>previsão</strong> (ML preditivo) e <strong>recomendação automática</strong> (prescritivo), habilitando o time a <strong>antecipar e evitar problemas</strong>.</p>
+        <h2>Público-Alvo</h2>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Persona</th>
+                    <th>Responsabilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Engenheiro de Manutenção</strong></td>
+                    <td>Saber quando máquina vai falhar (antes)</td>
+                </tr>
+                <tr>
+                    <td><strong>Planejador de Produção</strong></td>
+                    <td>Ajustar agenda sabendo que máquina pode falhar</td>
+                </tr>
+                <tr>
+                    <td><strong>Executivo de Operações</strong></td>
+                    <td>Reduzir paradas não‑planejadas proativamente</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <hr>
+        <h1 id="geracao-5">GERAÇÃO 5: PLATAFORMA DE OTIMIZAÇÃO CONTÍNUA GLOBAL</h1>
+        <h2>Missão</h2>
+        <p>Evoluir Nexus AI de <strong>MESS operacional</strong> para <strong>plataforma de otimização contínua</strong>, capaz de:</p>
+        <ul>
+            <li>✅ Coordenar múltiplas fábricas globalmente</li>
+            <li>✅ Automatizar decisões operacionais</li>
+            <li>✅ Compartilhar inteligência entre unidades</li>
+            <li>✅ Sustentar vantagem competitiva contínua</li>
+        </ul>
+        <h2>Público-Alvo</h2>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Persona</th>
+                    <th>Responsabilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Executivo Global / CEO</strong></td>
+                    <td>Visão unificada de OEE em 50+ fábricas</td>
+                </tr>
+                <tr>
+                    <td><strong>Chief Operations Officer</strong></td>
+                    <td>Otimização de mix de produção entre fábricas</td>
+                </tr>
+                <tr>
+                    <td><strong>Engenheiro de Inovação</strong></td>
+                    <td>Experimentar novos processos com confiança</td>
+                </tr>
+                <tr>
+                    <td><strong>Gestor de Compliance</strong></td>
+                    <td>Auditoria e conformidade centralizada</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <hr>
+        <h2 id="sumario-executivo">SUMÁRIO EXECUTIVO DO ROADMAP</h2>
+        <h3>Visão Consolidada</h3>
+        <p>Nexus AI evolui de <strong>MESS operacional</strong> (Gen 1–2) para <strong>plataforma inteligente</strong> (Gen 3–4) até <strong>ecossistema global de otimização contínua</strong> (Gen 5).</p>
+        <h3>Matriz de Evolução</h3>
+        <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Gen</th>
+                    <th>Foco Principal</th>
+                    <th>Impacto em OEE</th>
+                    <th>Público-Alvo</th>
+                    <th>Timeline Indicativa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>Qualidade Real-time</td>
+                    <td>OEE +15–20%</td>
+                    <td>Operação</td>
+                    <td>Mês 1–3</td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>Disponibilidade</td>
+                    <td>OEE +10–15% (acum)</td>
+                    <td>Manutenção</td>
+                    <td>Mês 4–6</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>Performance</td>
+                    <td>OEE +5–10% (acum)</td>
+                    <td>Processo/Eng</td>
+                    <td>Mês 7–9</td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>Preditivo & Prescritivo</td>
+                    <td>Paradas –40–50%</td>
+                    <td>Estratégia</td>
+                    <td>Mês 10–12</td>
+                </tr>
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>Otimização Global</td>
+                    <td>Custo –15–20%</td>
+                    <td>Executivo</td>
+                    <td>Mês 13+</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <hr>
+        <h2 id="proximos-passos">PRÓXIMOS PASSOS COMERCIAIS</h2>
+        <h3>Fase 1: Validação (Gen 1 MVP)</h3>
+        <ul>
+            <li>Validar em cliente piloto</li>
+            <li>Gerar referência comercial</li>
+            <li>Ajustar produto baseado em feedback</li>
+        </ul>
+        <h3>Fase 2: Expansão (Gen 1–2)</h3>
+        <ul>
+            <li>Expandir dentro do cliente piloto (outras máquinas/plantas)</li>
+            <li>Validar Gen 2 (disponibilidade)</li>
+            <li>Preparar documentação para escala</li>
+        </ul>
+        <h3>Fase 3: Produto Repetível (Gen 3)</h3>
+        <ul>
+            <li>Pronto para venda a novos clientes</li>
+            <li>Arquitetura multi-tenant validada</li>
+            <li>Pronto para escala global</li>
+        </ul>
+        <h3>Fase 4–5: Premium Offering (Gen 4–5)</h3>
+        <ul>
+            <li>Inteligência preditiva como diferencial de preço</li>
+            <li>Otimização global como premium</li>
+            <li>SaaS recorrente de alto valor</li>
+        </ul>
+    </div>
+</body>
+</html>

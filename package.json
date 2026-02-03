@@ -1,0 +1,14 @@
+{
+    "name": "nexus-ai-site",
+    "version": "1.0.0",
+    "description": "Nexus AI by GETTER - O Primeiro MES IA do Brasil",
+    "scripts": {
+        "build": "node build.js",
+        "serve": "npx serve dist -p 3000"
+    },
+    "devDependencies": {
+        "clean-css": "^5.3.3",
+        "html-minifier-terser": "^7.2.0",
+        "terser": "^5.31.0"
+    }
+}
